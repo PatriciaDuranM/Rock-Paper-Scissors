@@ -1,3 +1,7 @@
+/*typo
+Barlow Semi Condensed 
+semibold 600
+bold  700*/
 *{
     box-sizing: border-box;
 }
@@ -24,6 +28,68 @@ ul{
 }
 
 body{
-    font-family: sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     margin: 0;
+    background-image: radial-gradient(#1F3757,#131537);
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+}
+
+.main{
+    font-size: 52px;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    width: 375px;
+    margin-top: 32px;
+    padding: 16px;
+}
+
+@media screen and (width>786px) {
+    .main{
+        flex-direction: row;
+        width: 100%;
+        margin-top: 64px;
+    }
+}
+
+.imgportada{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+@media screen and (width>786px) {
+    .imgportada{
+        margin-top: 0px;
+        height: 330px;
+    }
+}
+
+.gamesimple{
+    margin-inline: auto;
+    text-align: center;
+}
+
+
+.title{
+    width: 375px;
+    margin-top: 16px;
+    text-align: center;
+}
+@media screen and (width>786px) {
+    .title{
+        width: 100px;
+    }
+}
+
+.gameadvance{
+    margin-top: 32px;
+    text-align: center;
+}
+
+@media screen and (width>786px) {
+    .gameadvance{
+        margin-top: 0px;
+    }
 }
