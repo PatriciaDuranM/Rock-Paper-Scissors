@@ -10,15 +10,96 @@
     <header class="header">
       <div class="score">
         <span class="textscore">YOU</span>
-        <span>0</span>
+        <span id="your-score" class="puntuacion">0</span>
       </div>
       <span class="titlegame">ROCK PAPER SCISSORS</span>
-      <div class="pcscore">
+      <div class="score pcscore">
         <span class="textscore">PC</span>
-        <span>0</span>
+        <span id="pc-score" class="puntuacion">0</span>
       </div>
     </header>
-    <main></main>
+    <main class="main-simple">
+      <div id="start" class="startsimple hidewindow">
+        <div id="rockbutton" class="rockbox circle">
+          <img
+            class="icon-button"
+            src="../assets/images/icon-rock.svg"
+            alt="Botón piedra"
+          />
+        </div>
+        <div id="paperbutton" class="paperbox circle">
+          <img
+            class="icon-button"
+            src="../assets/images/icon-paper.svg"
+            alt="Botón papel"
+          />
+        </div>
+        <div id="scissorsbutton" class="scissorsbox circle">
+          <img
+            class="icon-button"
+            src="../assets/images/icon-scissors.svg"
+            alt="Botón tijeras"
+          />
+        </div>
+      </div>
+      <div id="end" class="resultsimple hidewindow">
+        <div class="resultyou">
+          <span class="result-text">YOU PICKED</span>
+          <div id="scissors-res-you" class="hide scissorsbox-res circle">
+            <img
+              class="icon-button"
+              src="../assets/images/icon-scissors.svg"
+              alt="Botón tijeras"
+            />
+          </div>
+          <div id="paper-res-you" class="hide paperbox-res circle">
+            <img
+              class="icon-button"
+              src="../assets/images/icon-paper.svg"
+              alt="Botón papel"
+            />
+          </div>
+          <div id="rock-res-you" class="hide rockbox-res circle">
+            <img
+              class="icon-button"
+              src="../assets/images/icon-rock.svg"
+              alt="Botón piedra"
+            />
+          </div>
+        </div>
+        <div class="result">
+          <span id="result-text" class="result-final">YOU WIN</span>
+          <button id="playagain" class="resultbutton">PLAY AGAIN</button>
+        </div>
+        <div class="resultPC">
+          <span class="result-text">PC PICKED</span>
+          <div class="posible-result">
+            <div id="scissors-res-pc" class="hide scissorsbox-res circle">
+              <img
+                class="icon-button"
+                src="../assets/images/icon-scissors.svg"
+                alt="Botón tijeras"
+              />
+            </div>
+            <div id="paper-res-pc" class="hide paperbox-res circle">
+              <img
+                class="icon-button"
+                src="../assets/images/icon-paper.svg"
+                alt="Botón papel"
+              />
+            </div>
+            <div id="rock-res-pc" class="hide rockbox-res circle">
+              <img
+                class="icon-button"
+                src="../assets/images/icon-rock.svg"
+                alt="Botón piedra"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="rulebutton">RULES</button>
+    </main>
     <script src="../js/scripts.js"></script>
   </body>
 </html>
