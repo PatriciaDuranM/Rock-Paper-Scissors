@@ -34,6 +34,9 @@ const pcScoreElement = document.getElementById("pc-score");
 /*cajas*/
 const startElement = document.getElementById("start");
 const endElement = document.getElementById("end");
+/*modal*/
+const modalElement = document.getElementById("modal");
+const rulebuttonElement = document.getElementById("rulebutton");
 
 /*Pc aleatorio*/
 
