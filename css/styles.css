@@ -108,6 +108,15 @@ body{
     border: 3px solid hsla(0, 0%, 100%, 0.29);
 }
 
+@media screen and (width>786px) {
+    .header{
+        width: 700px;
+        height: 150px;
+        justify-content: space-between;
+        padding-left: 24px;
+    }
+}
+
 .score{
     width: 80px;
     padding-inline: 22px;
@@ -121,6 +130,13 @@ body{
     align-items: center;
 }
 
+@media screen and (width>786px) {
+    .score{
+        width: 150px;
+        height: 114px;
+   }
+}
+
 .titlegame{
     width: 83px;
     font-weight: 700;
@@ -130,6 +146,14 @@ body{
     margin-right: 32px;
 }
 
+@media screen and (width>786px) {
+    .titlegame{
+        width: 155px;
+        font-size: 40px;
+        line-height: 36px;
+   }
+}
+
 .textscore{
     color: #2A45C2;
     font-weight: 600;
@@ -137,11 +161,22 @@ body{
     text-align: center;
 }
 
+@media screen and (width>786px) {
+    .textscore{
+        font-size: 16px;
+   }
+}
+
 .puntuacion{
 color: #565468;
 font-weight: 700;
 font-size: 40px;
+}
 
+@media screen and (width>786px) {
+    .puntuacion{
+        font-size: 64px;
+   }
 }
 
 .main-simple{
@@ -162,9 +197,22 @@ margin-inline: auto;
     position: relative;
 }
 
+@media screen and (width>786px) {
+    .startsimple{
+        width: 476px;
+        height: 430px;
+        background-size: 287px 254px;
+   }
+}
+
 .icon-button{
     pointer-events: none;
 }
+
+@media screen and (width>786px) {
+    .icon-button{
+        width: 72px;
+}}
 
 .circle{
     width: 130px;
@@ -174,6 +222,16 @@ margin-inline: auto;
     padding: 16px;
     padding-top: 16px;
     padding-left: 24px;
+    box-shadow: 0px 5px 0px 0px transparent, 0px 19px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (width>786px) {
+    .circle{
+        width: 203px;
+        height: 203px;
+        padding-top: 40px;
+        padding-left: 40px;
+   }
 }
 
 .rockbox{
@@ -182,11 +240,29 @@ margin-inline: auto;
  position: absolute;
  top: 162px;
  left: 88px;
+ box-shadow: 0px 5px 0px 0px #9D1634;
+}
+
+@media screen and (width>786px) {
+    .rockbox{
+        border: 24px solid #DB2E4D;
+        padding-top: 50px;
+        padding-left: 50px;
+        top: 250px;
+        left: 130px;
+ }
 }
 
 .paperbox{
     border: 16px solid #4664F4;
     padding-left: 22px;
+    box-shadow: 0px 5px 0px 0px #2A45C2;
+}
+
+@media screen and (width>786px) {
+    .paperbox{
+        padding-left: 50px;
+ }
 }
 
 .scissorsbox{
@@ -194,6 +270,7 @@ margin-inline: auto;
     position: absolute;
     top: 0px;
     right:0px;
+    box-shadow: 0px 5px 0px 0px #C76C1B;
 }
 
 
@@ -214,7 +291,9 @@ margin-inline: auto;
 }
 
 .resultsimple{
+    margin-inline: auto;
     display: flex;
+    flex-wrap: wrap;
     width: 325px;
     height: 375px;
     justify-content: space-between;
@@ -264,23 +343,24 @@ margin-inline: auto;
     align-self: flex-end;
     justify-content: space-between;
     width: 220px;
-    height: 131px;
+    order: 1;
+    margin-inline:auto;
 }
 
 
 .result-final{
     display: block;
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 16px;
-    
+    font-family: inherit;
 }
 
 
 .resultbutton{
     display: block;
-    width: 100px;
+    width: 220px;
     height: 48px;
     border-radius: 8px;
     border: none;;
@@ -308,11 +388,11 @@ margin-inline: auto;
 
 .img-modal{
     margin-inline: auto;
-    margin-top: 200px;
-    width: 40%;
+    margin-top: 250px;
+    width: 80%;
 }
 
-/*
+
 .modal-show{
     scale:1;
-}*/
+}

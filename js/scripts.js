@@ -36,7 +36,7 @@ const startElement = document.getElementById("start");
 const endElement = document.getElementById("end");
 /*modal*/
 const modalElement = document.getElementById("modal");
-const rulebuttonElement = document.getElementById("rulebutton");
+const rulebuttonElement = document.getElementById("rulesbutton");
 
 /*Pc aleatorio*/
 
@@ -141,3 +141,16 @@ const result = () => {
 /*mostrar y ocultar las cajas*/
 
 playagainElement.addEventListener("click", showStart);
+
+/*modal*/
+
+const showModal = () => {
+  modalElement.classList.add("modal-show");
+};
+
+const hideModal = () => {
+  modalElement.classList.remove("modal-show");
+};
+
+rulebuttonElement.addEventListener("click", showModal);
+modalElement.addEventListener("click", hideModal);
